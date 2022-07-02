@@ -1,32 +1,43 @@
 # Election_Analysis
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+## Overview of Election Audit
+The Colorado Board of Elections (CBE) has requested an audit to be performed on a recent local congressional election. An Election Results .csv file formatted to provide data in the form of: ballot ID numbers, names of counties participating in the election, and the candidates being voted for has been made available to use as the dataset needed to perform the requested analysis of the election outcomes. 
 
-1. Calculate the total number of votes cast.
-2. get a complete list of candidates who received the votes
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the elections based on popular vote.
+The output that the CBE has requested is available in the **Election Audit-Results** section of the anyalysis report. At the end of the analysis, 
 
 ## Resources
 - Data Source: election_results.csv
-- Software: Python 3.6.1, Visual Studio Code, 1.38.1
+- Software: Python 3.7.6, Visual Studio Code, 1.38.1
 
-## Summary
-The analysis of the election shows that:
-- There were "x" votes cast in the election.
-- The candidates were:
-  - Candidate 1
-  - Candidate 2
-  - Candidate 3
--The candidate results were:
-  - Candidate 1 received "x% of the vote and "y" number of votes.
-  - Candidate 2 received "x% of the vote and "y" number of votes.
-  - Candidate 3 received "x% of the vote and "y" number of votes.
-- The winner of the election was:
-  - Candidate(1, 2, 3) who received "x%" of the vote and "y" number of votes.
+## Election Audi-Results
+
+![Election Results] (.Resources/Elections_Results.png)
+
+* How many votes were cast in this congressional election?
+  * Total Votes: 369,711
+
+* Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+  * County Votes:
+    Jefferson: 10.5% (38,855)
+    Denver: 82.8% (306,055)
+    Arapahoe: 6.7% (24,801)
+
+* Which county had the largest number of votes?
+  Largest County Turnout: Denver (306,055)
   
-## Challenge Overview
+* Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
+  * Voting Breakdown Per Candidate:
+    Charles Casper Stockham: 23.0% (85,213)
+    Diana DeGette: 73.8% (272,892)
+    Raymon Anthony Doane: 3.1% (11,606)
 
-## Challenge Summary
+* Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
+  * Winner: Diana DeGette
+    Winning Vote Count: 272,892
+    Winning Percentage: 73.8%
+
+## Election-Audit Summary
+Code used to extract the results is designed for future use for the State of Colorado's Election Results. A few points to consider:
+  * the formatting of future source files used to derive the same analysis provided in this report would ideally be the same (Ballot ID, County Name, and Candidate name)
+    * If the format is different, the structure of the code is set up with a low amount of static data, so that variables can be altered and added if necessary
+  * Separate files for each election to be analyzed are required instead of receiving a consolidated file that houses multiple elections 
