@@ -9,9 +9,9 @@ The output that the CBE has requested is available in the **Election Audit-Resul
 - Data Source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code, 1.38.1
 
-## Election Audi-Results
+## Election Audit-Results
 
-![Election Results] (./Resources/Elections_Results.png)
+![Election Results](./Resources/Election_Results.png)
 
 * How many votes were cast in this congressional election?
   * Total Votes: 369,711
